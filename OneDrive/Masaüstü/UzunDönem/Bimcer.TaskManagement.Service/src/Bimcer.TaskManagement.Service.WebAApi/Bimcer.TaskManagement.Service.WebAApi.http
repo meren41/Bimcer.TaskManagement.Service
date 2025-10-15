@@ -1,0 +1,6 @@
+@Bimcer.TaskManagement.Service.WebAApi_HostAddress = http://localhost:5261
+
+GET {{Bimcer.TaskManagement.Service.WebAApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

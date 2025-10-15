@@ -1,0 +1,13 @@
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\bin\Debug\net9.0\Bimcer.TaskManagement.Service.Core.deps.json
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\bin\Debug\net9.0\Bimcer.TaskManagement.Service.Core.dll
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\bin\Debug\net9.0\Bimcer.TaskManagement.Service.Core.pdb
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.AssemblyInfo.cs
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.sourcelink.json
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.dll
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\refint\Bimcer.TaskManagement.Service.Core.dll
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Core.pdb
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Core\obj\Debug\net9.0\ref\Bimcer.TaskManagement.Service.Core.dll

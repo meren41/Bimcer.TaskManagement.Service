@@ -1,6 +1,0 @@
-@Bimcer.TaskManagement.Service.WebApi_HostAddress = http://localhost:5266
-
-GET {{Bimcer.TaskManagement.Service.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
