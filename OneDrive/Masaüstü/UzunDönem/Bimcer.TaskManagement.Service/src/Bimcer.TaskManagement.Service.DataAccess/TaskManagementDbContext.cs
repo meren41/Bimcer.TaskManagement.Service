@@ -22,17 +22,15 @@ public class TaskManagementDbContext : DbContext
             b.ToTable("Users");
             b.HasKey(x => x.Id);
 
-            b.Property(x => x.FirstName).IsRequired().HasMaxLength(100);
-            b.Property(x => x.LastName).IsRequired().HasMaxLength(100);
+            b.Property(x => x.Username).IsRequired().HasMaxLength(100);
+            b.HasIndex(x => x.Username).IsUnique();
+
             b.Property(x => x.Email).IsRequired().HasMaxLength(200);
             b.HasIndex(x => x.Email).IsUnique();
 
             b.Property(x => x.PasswordHash).IsRequired();
-            b.Property(x => x.PasswordSalt);
-
-            b.Property(x => x.IsActive).HasDefaultValue(true);
-            b.Property(x => x.CreatedAtUtc)
-                .HasDefaultValueSql("GETUTCDATE()");
+            b.Property(x => x.Role).IsRequired().HasMaxLength(20).HasDefaultValue("User");
+            b.Property(x => x.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
         });
 
         // TaskItem
@@ -43,8 +41,8 @@ public class TaskManagementDbContext : DbContext
 
             b.Property(x => x.Title).IsRequired().HasMaxLength(200);
             b.Property(x => x.Description);
-            b.Property(x => x.Status).IsRequired().HasMaxLength(32);
-            b.Property(x => x.CreatedAtUtc).HasDefaultValueSql("GETUTCDATE()");
+            b.Property(x => x.IsCompleted).HasDefaultValue(false);
+            b.Property(x => x.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
 
             b.HasOne(x => x.User)
                 .WithMany(u => u.Tasks)
@@ -58,10 +56,12 @@ public class TaskManagementDbContext : DbContext
             b.ToTable("RefreshTokens");
             b.HasKey(x => x.Id);
 
+            b.Property(x => x.UserId).IsRequired();
             b.Property(x => x.Token).IsRequired();
             b.HasIndex(x => x.Token).IsUnique();
 
-            b.Property(x => x.CreatedAtUtc).HasDefaultValueSql("GETUTCDATE()");
+            b.Property(x => x.Expires).IsRequired();
+            b.Property(x => x.IsRevoked).HasDefaultValue(false);
 
             b.HasOne(x => x.User)
                 .WithMany(u => u.RefreshTokens)

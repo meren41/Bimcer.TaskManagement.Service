@@ -4,6 +4,5 @@ public class TaskUpdateDto
 {
     public string? Title { get; set; }
     public string? Description { get; set; }
-    public string? Status { get; set; } // optional: "pending" | "in_progress" | "done"
-    public DateTime? DueDateUtc { get; set; }
+    public bool? IsCompleted { get; set; }
 }

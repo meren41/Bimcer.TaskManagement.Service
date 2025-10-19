@@ -1,0 +1,12 @@
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\bin\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.deps.json
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\bin\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.dll
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\bin\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.pdb
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.AssemblyInfo.cs
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.sourcelink.json
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.dll
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\refint\Bimcer.TaskManagement.Service.Contracts.dll
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\Bimcer.TaskManagement.Service.Contracts.pdb
+C:\Users\Asus\OneDrive\Masaüstü\UzunDönem\Bimcer.TaskManagement.Service\src\Bimcer.TaskManagement.Service.Contracts\obj\Debug\net9.0\ref\Bimcer.TaskManagement.Service.Contracts.dll

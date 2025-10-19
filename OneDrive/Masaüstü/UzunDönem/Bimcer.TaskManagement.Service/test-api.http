@@ -1,0 +1,71 @@
+### API Test Scenarios
+
+@baseUrl = http://localhost:5261
+@contentType = application/json
+
+### Test 1: Register New User
+POST {{baseUrl}}/api/auth/register
+Content-Type: {{contentType}}
+
+{
+  "username": "testuser1",
+  "email": "testuser1@example.com",
+  "password": "Test@123456"
+}
+
+### Test 2: Login User
+POST {{baseUrl}}/api/auth/login
+Content-Type: {{contentType}}
+
+{
+  "username": "testuser1",
+  "password": "Test@123456"
+}
+
+### Test 3: Create Task (requires Bearer token from login)
+POST {{baseUrl}}/api/tasks
+Content-Type: {{contentType}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjEiLCJlbWFpbCI6InRlc3R1c2VyMUBleGFtcGxlLmNvbSIsInVzZXJuYW1lIjoidGVzdHVzZXIxIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3MjkzNjU2NzcsImV4cCI6MTcyOTM2OTI3NywiaWF0IjoxNzI5MzY1Njc3fQ.PLACEHOLDER
+
+{
+  "title": "Test Task 1",
+  "description": "This is a test task",
+  "isCompleted": false
+}
+
+### Test 4: Get All Tasks
+GET {{baseUrl}}/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjEiLCJlbWFpbCI6InRlc3R1c2VyMUBleGFtcGxlLmNvbSIsInVzZXJuYW1lIjoidGVzdHVzZXIxIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3MjkzNjU2NzcsImV4cCI6MTcyOTM2OTI3NywiaWF0IjoxNzI5MzY1Njc3fQ.PLACEHOLDER
+
+### Test 5: Update Task
+PUT {{baseUrl}}/api/tasks/1
+Content-Type: {{contentType}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjEiLCJlbWFpbCI6InRlc3R1c2VyMUBleGFtcGxlLmNvbSIsInVzZXJuYW1lIjoidGVzdHVzZXIxIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3MjkzNjU2NzcsImV4cCI6MTcyOTM2OTI3NywiaWF0IjoxNzI5MzY1Njc3fQ.PLACEHOLDER
+
+{
+  "title": "Updated Task 1",
+  "description": "Updated description",
+  "isCompleted": true
+}
+
+### Test 6: Delete Task
+DELETE {{baseUrl}}/api/tasks/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjEiLCJlbWFpbCI6InRlc3R1c2VyMUBleGFtcGxlLmNvbSIsInVzZXJuYW1lIjoidGVzdHVzZXIxIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3MjkzNjU2NzcsImV4cCI6MTcyOTM2OTI3NywiaWF0IjoxNzI5MzY1Njc3fQ.PLACEHOLDER
+
+### Test 7: Refresh Token
+POST {{baseUrl}}/api/auth/refresh-token
+Content-Type: {{contentType}}
+
+{
+  "refreshToken": "REFRESH_TOKEN_FROM_LOGIN"
+}
+
+### Test 8: Logout
+POST {{baseUrl}}/api/auth/logout
+Content-Type: {{contentType}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjEiLCJlbWFpbCI6InRlc3R1c2VyMUBleGFtcGxlLmNvbSIsInVzZXJuYW1lIjoidGVzdHVzZXIxIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3MjkzNjU2NzcsImV4cCI6MTcyOTM2OTI3NywiaWF0IjoxNzI5MzY1Njc3fQ.PLACEHOLDER
+
+{
+  "refreshToken": "REFRESH_TOKEN_FROM_LOGIN"
+}
+

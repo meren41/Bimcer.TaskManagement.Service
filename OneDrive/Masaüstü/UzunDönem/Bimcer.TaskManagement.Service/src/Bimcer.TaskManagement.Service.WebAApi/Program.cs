@@ -1,4 +1,6 @@
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -11,7 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Serilog (isteğe bağlı, appsettings'ten okur)
 // builder.Host.UseSerilog((ctx, lc) => lc.ReadFrom.Configuration(ctx.Configuration));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
 {
@@ -56,7 +63,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 //  DbContext burada appsettings.json'dan 'Default' connection string'i alır
 // DI: katman servisleri
-builder.Services.AddBusinessServices();
+builder.Services.AddBusinessServices(builder.Configuration);
 builder.Services.AddDataAccessServices(builder.Configuration);
 
 // AutoMapper/FluentValidation vs. burada da eklenebilir

@@ -4,6 +4,7 @@
     <ProjectReference Include="..\Bimcer.TaskManagement.Service.DataAccess\Bimcer.TaskManagement.Service.DataAccess.csproj" />
     <ProjectReference Include="..\Bimcer.TaskManagement.Service.Core\Bimcer.TaskManagement.Service.Core.csproj" />
     <ProjectReference Include="..\Bimcer.TaskManagement.Service.Entity\Bimcer.TaskManagement.Service.Entity.csproj" />
+    <ProjectReference Include="..\Bimcer.TaskManagement.Service.Contracts\Bimcer.TaskManagement.Service.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

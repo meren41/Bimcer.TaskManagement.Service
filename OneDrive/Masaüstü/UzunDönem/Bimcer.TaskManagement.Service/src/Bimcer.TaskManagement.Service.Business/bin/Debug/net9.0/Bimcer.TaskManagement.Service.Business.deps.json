@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "Bimcer.TaskManagement.Service.Business/1.0.0": {
         "dependencies": {
+          "Bimcer.TaskManagement.Service.Contracts": "1.0.0",
           "Bimcer.TaskManagement.Service.Core": "1.0.0",
           "Bimcer.TaskManagement.Service.DataAccess": "1.0.0",
           "Bimcer.TaskManagement.Service.Entity": "1.0.0",
@@ -591,8 +592,17 @@
           }
         }
       },
+      "Bimcer.TaskManagement.Service.Contracts/1.0.0": {
+        "runtime": {
+          "Bimcer.TaskManagement.Service.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Bimcer.TaskManagement.Service.Core/1.0.0": {
         "dependencies": {
+          "Bimcer.TaskManagement.Service.Entity": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "8.14.0",
           "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
@@ -996,6 +1006,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Bimcer.TaskManagement.Service.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Bimcer.TaskManagement.Service.Core/1.0.0": {
       "type": "project",

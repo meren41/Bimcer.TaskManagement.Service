@@ -115,6 +115,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Bimcer.TaskManagement.Service.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Bimcer.TaskManagement.Service.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bimcer.TaskManagement.Service.Entity.dll": {}
+        }
       }
     }
   },
@@ -343,10 +353,16 @@
         "system.identitymodel.tokens.jwt.8.14.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
+    },
+    "Bimcer.TaskManagement.Service.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Bimcer.TaskManagement.Service.Entity/Bimcer.TaskManagement.Service.Entity.csproj",
+      "msbuildProject": "../Bimcer.TaskManagement.Service.Entity/Bimcer.TaskManagement.Service.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Bimcer.TaskManagement.Service.Entity >= 1.0.0",
       "Microsoft.IdentityModel.Tokens >= 8.14.0",
       "System.IdentityModel.Tokens.Jwt >= 8.14.0"
     ]
@@ -382,7 +398,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Entity\\Bimcer.TaskManagement.Service.Entity.csproj": {
+              "projectPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Entity\\Bimcer.TaskManagement.Service.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

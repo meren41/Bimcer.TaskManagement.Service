@@ -1980,6 +1980,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Bimcer.TaskManagement.Service.Contracts": "1.0.0",
           "Bimcer.TaskManagement.Service.Core": "1.0.0",
           "Bimcer.TaskManagement.Service.DataAccess": "1.0.0",
           "Bimcer.TaskManagement.Service.Entity": "1.0.0",
@@ -1993,10 +1994,21 @@
           "bin/placeholder/Bimcer.TaskManagement.Service.Business.dll": {}
         }
       },
+      "Bimcer.TaskManagement.Service.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Bimcer.TaskManagement.Service.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bimcer.TaskManagement.Service.Contracts.dll": {}
+        }
+      },
       "Bimcer.TaskManagement.Service.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Bimcer.TaskManagement.Service.Entity": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "8.14.0",
           "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
@@ -5720,6 +5732,11 @@
       "type": "project",
       "path": "../Bimcer.TaskManagement.Service.Business/Bimcer.TaskManagement.Service.Business.csproj",
       "msbuildProject": "../Bimcer.TaskManagement.Service.Business/Bimcer.TaskManagement.Service.Business.csproj"
+    },
+    "Bimcer.TaskManagement.Service.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Bimcer.TaskManagement.Service.Contracts/Bimcer.TaskManagement.Service.Contracts.csproj",
+      "msbuildProject": "../Bimcer.TaskManagement.Service.Contracts/Bimcer.TaskManagement.Service.Contracts.csproj"
     },
     "Bimcer.TaskManagement.Service.Core/1.0.0": {
       "type": "project",

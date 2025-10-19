@@ -1,3 +1,5 @@
+using Bimcer.TaskManagement.Service.Core.Abstractions;
+using Bimcer.TaskManagement.Service.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +15,11 @@ public static class ServiceCollectionExtensions
 
         services.AddDbContext<TaskManagementDbContext>(opt =>
             opt.UseSqlServer(connStr));
+
+        // Register repositories
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ITaskRepository, TaskRepository>();
+        services.AddScoped<RefreshTokenRepository>();
 
         return services;
     }
