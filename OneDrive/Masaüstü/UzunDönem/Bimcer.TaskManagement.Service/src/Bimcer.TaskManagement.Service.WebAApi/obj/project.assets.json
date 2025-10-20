@@ -5758,6 +5758,7 @@
     "net9.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Bimcer.TaskManagement.Service.Business >= 1.0.0",
+      "Bimcer.TaskManagement.Service.Contracts >= 1.0.0",
       "Bimcer.TaskManagement.Service.Core >= 1.0.0",
       "Bimcer.TaskManagement.Service.DataAccess >= 1.0.0",
       "Bimcer.TaskManagement.Service.Entity >= 1.0.0",
@@ -5804,6 +5805,9 @@
           "projectReferences": {
             "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Business\\Bimcer.TaskManagement.Service.Business.csproj": {
               "projectPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Business\\Bimcer.TaskManagement.Service.Business.csproj"
+            },
+            "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Contracts\\Bimcer.TaskManagement.Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Contracts\\Bimcer.TaskManagement.Service.Contracts.csproj"
             },
             "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Core\\Bimcer.TaskManagement.Service.Core.csproj": {
               "projectPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\UzunDönem\\Bimcer.TaskManagement.Service\\src\\Bimcer.TaskManagement.Service.Core\\Bimcer.TaskManagement.Service.Core.csproj"

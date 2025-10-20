@@ -55,19 +55,19 @@ public sealed class AuthManager(
 
     public async Task<AuthResponse> LoginAsync(LoginRequest r)
     {
-        var user = await db.Users.FirstOrDefaultAsync(x => x.Email == r.Email)
+        var user = await db.Users.FirstOrDefaultAsync(x => x.Username == r.Username)
                    ?? throw new BusinessException("Geçersiz kimlik bilgisi.");
 
         if (!HashingHelper.Verify(r.Password, user.PasswordHash))
             throw new BusinessException("Geçersiz kimlik bilgisi.");
 
-        // ⬇️ (Opsiyonel) Eski aktif refresh token'ları iptal et (rotate on login)
+        // (Opsiyonel) Eski aktif refresh token'ları iptal et (rotate on login)
         var oldActives = await db.RefreshTokens
             .Where(x => x.UserId == user.Id && !x.IsRevoked && x.Expires > DateTimeOffset.UtcNow)
             .ToListAsync();
         foreach (var t in oldActives) t.IsRevoked = true;
 
-        // ⬇️ Yeni refresh token oluştur
+        //  Yeni refresh token oluştur
         var (rt, rtExp) = jwt.CreateRefreshToken();
         await db.RefreshTokens.AddAsync(new RefreshToken
         {
@@ -93,7 +93,7 @@ public sealed class AuthManager(
         if (string.IsNullOrWhiteSpace(request.RefreshToken))
             throw new BusinessException("Refresh token gerekli.");
 
-        // ⬇️ Token'ı bul + user'la birlikte getir
+        //  Token'ı bul + user'la birlikte getir
         var token = await db.RefreshTokens
             .Include(t => t.User)
             .FirstOrDefaultAsync(t => t.Token == request.RefreshToken);
@@ -101,10 +101,10 @@ public sealed class AuthManager(
         if (token is null) throw new BusinessException("Geçersiz refresh token.");
         if (!token.IsActive) throw new BusinessException("Refresh token aktif değil (süresi dolmuş veya iptal edilmiş).");
 
-        // ⬇️ Eski refresh token'ı iptal et (rotation)
+        //  Eski refresh token'ı iptal et (rotation)
         token.IsRevoked = true;
 
-        // ⬇️ Yeni refresh token üret
+        //  Yeni refresh token üret
         var (newRt, newRtExp) = jwt.CreateRefreshToken();
         await db.RefreshTokens.AddAsync(new RefreshToken
         {
@@ -113,7 +113,7 @@ public sealed class AuthManager(
             UserId = token.UserId
         });
 
-        // ⬇️ Yeni access token üret
+        //  Yeni access token üret
         var (newAt, newAtExp) = jwt.CreateAccessToken(token.User);
 
         await db.SaveChangesAsync();

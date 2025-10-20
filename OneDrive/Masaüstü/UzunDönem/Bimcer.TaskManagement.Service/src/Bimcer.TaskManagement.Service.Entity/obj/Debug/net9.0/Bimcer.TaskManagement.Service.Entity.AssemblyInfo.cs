@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bimcer.TaskManagement.Service.Entity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc8b71d2c365b794d8b24c64b4a50dbc66862783")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7427e9f3cf407df2ab05d7f9fb1b44e8cda2c675")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bimcer.TaskManagement.Service.Entity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bimcer.TaskManagement.Service.Entity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

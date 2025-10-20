@@ -31,6 +31,7 @@ public static class ServiceCollectionExtensions
         // services
         services.AddScoped<IAuthService, AuthManager>();
         services.AddScoped<ITaskService, TaskManager>();
+        services.AddScoped<IUserService, UserManager>();
 
         return services;
     }

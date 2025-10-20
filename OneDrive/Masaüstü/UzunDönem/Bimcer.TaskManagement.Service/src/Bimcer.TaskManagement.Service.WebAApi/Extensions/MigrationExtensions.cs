@@ -5,10 +5,8 @@ namespace Bimcer.TaskManagement.Service.WebAApi.Extensions;
 
 public static class MigrationExtensions
 {
-    /// <summary>
-    /// Uygulama açılışında bekleyen EF Core migration'larını uygular.
-    /// Hata varsa loglar ve hatayı tekrar fırlatır.
-    /// </summary>
+    // Uygulama açılışında bekleyen EF Core migration'larını uygular.
+    // Hata varsa loglar ve hatayı tekrar fırlatır.
     public static async Task<WebApplication> MigrateDatabaseAsync(this WebApplication app, bool seed = false)
     {
         using var scope = app.Services.CreateScope();

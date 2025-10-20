@@ -42,7 +42,7 @@ public sealed class JwtHelper
         return (new JwtSecurityTokenHandler().WriteToken(jwt), expires);
     }
 
-    /// <summary> Rastgele, kriptografik olarak güçlü bir refresh token üretir (opak string). </summary>
+    /// Rastgele, kriptografik olarak güçlü bir refresh token üretir 
     public (string Token, DateTime ExpiresAtUtc) CreateRefreshToken()
     {
         // 64 bayt -> Base64 ~ 88 char. URL-safe istiyorsan Convert.ToBase64String yerine Base64UrlEncoder de kullanılabilir.
@@ -52,7 +52,7 @@ public sealed class JwtHelper
         return (token, expires);
     }
 
-    /// <summary> Access token doğrulama (isteğe bağlı yardımcı). </summary>
+    ///  Access token doğrulama (isteğe bağlı yardımcı).
     public ClaimsPrincipal? ValidateAccessToken(string token, bool validateLifetime = true)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
